@@ -28,6 +28,8 @@ export MOODLE_DOCKER_DB=pgsql
 
 # Get Moodle code, you could select another version branch (skip this if you already got the code)
 git clone -b [MOODLE_BRANCH] git://git.moodle.org/moodle.git $MOODLE_DOCKER_WWWROOT
+# Esta es la que se está usando Version 5.0.1 Actual Stable
+git clone -b MOODLE_501_STABLE git://git.moodle.org/moodle.git $MOODLE_DOCKER_WWWROOT
 
 # Ensure customized config.php for the Docker containers is in place
 cp config.docker-template.php $MOODLE_DOCKER_WWWROOT/config.php
